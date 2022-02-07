@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "101423d6-7069-497e-ab48-9472c12ea3c5",
+    "name": "covid",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "get statistic by state",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/covid_info_state/:state",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["covid_info_state", ":state"],
+          "variable": [
+            {
+              "key": "state",
+              "value": "al"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get statistic by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/covid_info_id/:id",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["covid_info_id", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "\"fe384eca-f375-4a03-83be-4759225d31f1\""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "list requests",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/covid_list",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["covid_list"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
